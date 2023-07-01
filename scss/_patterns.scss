@@ -1,0 +1,15 @@
+.btn-home{
+    display: block;
+    width: 100%;
+    max-width: 19rem;
+    background-color: #364D41;
+    color: #fff;
+    padding: 2.3rem 4rem;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    transition: all .3s;
+    &:hover{
+        background-color: #0CB55D;
+    }
+}

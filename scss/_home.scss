@@ -1,0 +1,297 @@
+.s-hero{
+    .bg-container{
+        height: 87rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: url(../img/slide/car-slide1.jpg) no-repeat center center;
+        background-size: cover;
+        .container{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -23rem;
+            .text-content{
+                width: 100%;
+                max-width: 41rem;
+                margin-right: 5rem;
+                h1{
+                    color: #272B28;
+                    font-size: 8rem;
+                    font-family: Poppins;
+                    font-weight: 700;
+                }
+                p{
+                    color: #FFF;
+                    font-size: 2rem;
+                    font-family: Poppins;
+                    font-weight: 600;
+                    margin-top: -3rem;
+                }
+                .btn-home{
+                    margin-left: 22rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 1080px){
+        .bg-container{
+            .container{
+                .text-content{
+                    margin-right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    h1{
+                        font-size: 7rem;
+                    }
+                    p{
+                        font-size: 1.7rem;
+                        margin-top: -2rem;
+                        margin-right: 8rem;
+                    }
+                    .btn-home{
+                        margin-left: 22rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 880px){
+        .bg-container{
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .text-content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -28rem;
+                    h1{
+                        font-size: 6.5rem;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        margin-top: -2rem;
+                        margin-right: 6.7rem;
+                    }
+                    .btn-home{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 490px){
+        .bg-container{
+            .container{
+                .text-content{
+                    h1{
+                        font-size: 5rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        margin-top: -1rem;
+                        margin-right: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.s-infos{
+    position: relative;
+    background: #2D2D2D;
+    height: 47rem;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 50rem);
+        grid-gap: 8rem 15rem;
+        place-content: center;
+        z-index: 3;
+        .card-container{
+            margin-top: -9rem;
+            width: 100%;
+            max-width: 50rem;
+            height: 21rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            background: #D9D9D9;
+            border-radius: 15px;
+            &.card-top{
+                margin-bottom: 9rem;
+            }
+            .left-content{
+                width: 100%;
+                max-width: 16rem;
+                background-color: #0CB55D;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3.5rem 2rem;
+                border-radius: 10px;
+                img{
+                    width: 8rem;
+                    &.icon-envelope{
+                        width: 7rem;
+                    }
+                    &.icon-maior{
+                        width: 9rem;
+                    }
+                }
+            }
+            .right-content{
+                h4{
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    margin-bottom: .9rem;
+                }
+                p{
+                    color: #717171;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    width: 100%;
+                    max-width: 26rem;
+                    margin-bottom: 1.8rem;
+                }
+                .btn-info{
+                    display: block;
+                    padding: 1.8rem;
+                    font-size: 1.7rem;
+                    text-align: center;
+                    border-radius: 8px;
+                    background: #272B28;
+                    color: #FFF;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: rgba(39, 43, 40, 0.83);
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1190px){
+        .container{
+            grid-gap: 4rem;
+        }
+    }
+    @media (max-width: 1080px){
+        .container{
+            grid-template-columns: repeat(2, 40rem);
+            grid-gap: 6rem 4rem;
+            .card-container{
+                max-width: 40rem;
+                height: 21rem;
+                padding: 2rem;
+                .left-content{
+                    max-width: 12rem;
+                    padding: 3.5rem 2rem;
+                    img{
+                        width: 6rem;
+                        &.icon-envelope{
+                            width: 6.7rem;
+                        }
+                        &.icon-maior{
+                            width: 7.4rem;
+                        }
+                    }
+                }
+                .right-content{
+                    h4{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.5rem;
+                        max-width: 24rem;
+                    }
+                    .btn-info{
+                        padding: 1.5rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 880px){
+        height: 93rem;
+        .container{
+            grid-template-columns: repeat(1, 55rem);
+            grid-gap: 5rem;
+            .card-container{
+                max-width: 55rem;
+                gap: 6rem;
+                &.card-money{
+                    margin-bottom: 9rem;
+                }
+                .left-content{
+                    max-width: 16rem;
+                    padding: 3.5rem 2rem;
+                    img{
+                        width: 9rem;
+                        &.icon-envelope{
+                            width: 8rem;
+                        }
+                        &.icon-maior{
+                            width: 9rem;
+                        }
+                    }
+                }
+                .right-content{
+                    h4{
+                        font-size: 2.3rem;
+                    }
+                    p{
+                        font-size: 1.7rem;
+                        max-width: 27rem;
+                    }
+                    .btn-info{
+                        padding: 1.5rem;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 580px){
+        .container{
+            grid-template-columns: repeat(1, 44rem);
+            grid-gap: 5rem;
+            .card-container{
+                max-width: 44rem;
+            }
+        }
+    }
+    @media (max-width: 480px){
+        height: 168rem;
+        .container{
+            grid-template-columns: repeat(1, 30rem);
+            grid-gap: 9rem;
+            .card-container{
+                margin-top: -12rem;
+                max-width: 30rem;
+                flex-direction: column;
+                height: 40rem;
+                gap: 2.4rem;
+                .left-content{
+                    max-width: 28rem;
+                    img{
+                        width: 9rem;
+                    }
+                }
+                .right-content{
+                    h4{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        max-width: 27rem;
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
