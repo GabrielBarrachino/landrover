@@ -328,59 +328,65 @@
             align-items: center;
             justify-content: center;
             gap: 6rem;
-            .image-content{
+            .box{
                 width: 100%;
                 height: 51.5rem;
-                cursor: pointer;             
-                &.image-01{
-                    background: url(../img/familia/familia-rangerover.jpg) no-repeat center center;
-                    background-size: cover;
-                }
-                &.image-02{
-                    background: url(../img/familia/familia-discovery.jpg) no-repeat center center;
-                    background-size: cover;
-                }
-                &.image-03{
-                    background: url(../img/familia/familia-defender.jpg) no-repeat center center;
-                    background-size: cover;
-                }
-                .text-content{
-                    background-color: rgba(0, 0, 0, 0.5);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    height: 51.5rem;
-                    opacity: 0;
-                    transition: all .6s;
-                    &:hover{
-                        opacity: 1;
+                .image-content{
+                    cursor: pointer;
+                    &.image-01{
+                        background: url(../img/familia/familia-rangerover.jpg) no-repeat center center;
+                        background-size: cover;
                     }
-                    h3{
-                        color: #FFF;
-                        font-size: 4.5rem;
-                        font-weight: 500;
+                    &.image-02{
+                        background: url(../img/familia/familia-discovery.jpg) no-repeat center center;
+                        background-size: cover;
                     }
-                    p{
-                        color: #FFF;
-                        font-size: 2rem;
-                        font-weight: 500;
-                        letter-spacing: 1.5px;
+                    &.image-03{
+                        background: url(../img/familia/familia-defender.jpg) no-repeat center center;
+                        background-size: cover;
                     }
-                    .btn-family{
-                        display: block;
-                        border-radius: 6px;
-                        background: #364D41;
-                        padding: 2.6rem 4rem;
-                        margin-top: 4rem;
-                        font-size: 1.9rem;
-                        color: #FFF;
-                        transition: all .3s;
+                    .text-content{
+                        background-color: rgba(0, 0, 0, 0.5);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        height: 51.5rem;
+                        opacity: 0;
+                        transition: all .6s;
                         &:hover{
-                            background-color: #0CB55D;
+                            opacity: 1;
                         }
-                    }
-                }      
+                        h3{
+                            color: #FFF;
+                            font-size: 4.5rem;
+                            font-weight: 500;
+                        }
+                        p{
+                            color: #FFF;
+                            font-size: 2rem;
+                            font-weight: 500;
+                            letter-spacing: 1.5px;
+                        }
+                        .btn-family{
+                            display: block;
+                            border-radius: 6px;
+                            background: #364D41;
+                            padding: 2.6rem 4rem;
+                            margin-top: 4rem;
+                            font-size: 1.9rem;
+                            color: #FFF;
+                            transition: all .3s;
+                            &:hover{
+                                background-color: #0CB55D;
+                            }
+                        }
+                    }      
+                }
+                .text-content-responsive{
+                    display: none;
+                    pointer-events: none;
+                }
             }
         }
     }
@@ -388,18 +394,21 @@
     @media (max-width: 1080px){
         .container{
             .images-content{
-                .image-content{
-                    height: 48rem;
-                    .text-content{
+                gap: 1rem;
+                .box{
+                    .image-content{
                         height: 48rem;
+                        .text-content{
+                            height: 48rem;
+                        }
                     }
                 }
             }
         }
     }
-
     @media (max-width: 700px){
         .container{
+            margin-bottom: 0;
             .top-content{
                 .title-top{
                     margin: 0 auto;
@@ -409,19 +418,118 @@
                 }
             }
             .images-content{
-                .image-content{
-                    height: 40rem;
-                    .text-content{
+                .box{
+                    &:not(:last-child){
+                        margin-bottom: 2rem;
+                    }
+                    .image-content{
+                        cursor: auto;
                         height: 40rem;
-                        h3{
-                            font-size: 3.6rem;
+                        .text-content{
+                            display: none;
+                            height: 40rem;
                         }
-                        p{
-                            font-size: 1.6rem;
-                        }
+                    }
+                    .text-content-responsive{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        pointer-events: all;
+                        margin-top: 2rem;
+                        .box-text{
+                            h3{
+                                font-size: 2.5rem;
+                            }
+                            p{
+                                font-size: 1.7rem;
+                                color: #7c7c7c;
+                                font-weight: 600;
+                            }
+                        }                   
                         .btn-family{
-                            padding: 2rem 3.8rem;
+                            padding: 2rem 3.4rem;
                             font-size: 1.5rem;
+                            border-radius: 6px;
+                            background: #364D41;
+                            margin-top: 4rem;
+                            font-size: 1.4rem;
+                            color: #FFF;
+                            transition: all .3s;
+                            &:hover{
+                                background-color: #0CB55D;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 560px){
+        .container{
+            .top-content{
+                .title-top{
+                    margin: 0 auto;
+                    font-size: 3rem;
+                }
+            }
+            .images-content{
+                gap: 0;
+                .box{
+                    .image-content{
+                        height: 36rem;
+                    }
+                    .text-content-responsive{
+                        margin-top: 2.5rem;
+                        .box-text{
+                            h3{
+                                font-size: 2rem;
+                            }
+                            p{
+                                font-size: 1.5rem;
+                            }
+                        }                   
+                        .btn-family{
+                            padding: 2rem 2.8rem;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .container{
+            margin-bottom: 4rem;
+            .top-content{
+                .title-top{
+                    font-size: 3.2rem;
+                }
+            }
+            .images-content{
+                .box{
+                    &:not(:first-child){
+                        margin-top: 5rem;
+                    }
+                    .image-content{
+                        height: 35rem;
+                    }
+                    .text-content-responsive{
+                        flex-direction: column;
+                        margin: 0 auto;
+                        text-align: center;
+                        .box-text{
+                            margin-top: 3rem;
+                            margin-bottom: 4rem;
+                            h3{
+                                font-size: 2.4rem;
+                            }
+                            p{
+                                font-size: 1.6rem;
+                            }
+                        }                   
+                        .btn-family{
+                            padding: 2rem 4rem;
+                            font-size: 1.6rem;
                         }
                     }
                 }
