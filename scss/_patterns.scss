@@ -13,3 +13,54 @@
         background-color: #0CB55D;
     }
 }
+
+.container{
+    .top-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 7rem;
+        margin-bottom: 6rem;
+        .title-top{
+            color: #272B28;
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+        .btn-top{
+            border-radius: 6px;
+            background: #272B28;
+            padding: 2.6rem 4rem;
+            font-size: 1.7rem;
+            color: #FFF;
+            transition: all .3s;
+            &:hover{
+                background-color: rgba(39, 43, 40, 0.83);
+            }
+        }
+    }
+    @media(max-width: 700px){
+        .top-content{
+            .title-top{
+                margin: 0 auto;
+            }
+            .btn-top{
+                display: none;
+            }
+        }
+    }
+    @media(max-width: 560px){
+        .top-content{
+            .title-top{
+                margin: 0 auto;
+                font-size: 3rem;
+            }
+        }
+    }
+    @media(max-width: 480px){
+        .top-content{
+            .title-top{
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
