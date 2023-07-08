@@ -1257,3 +1257,113 @@
         }
     }
 }
+
+
+footer{
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+    .container{
+        .content-footer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .menu-container{
+                .title-redes{
+                    font-size: 2.5rem;
+                }
+                &:not(:last-child){
+                    margin-bottom: 5rem;
+                }
+                h5{
+                    color: #000;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    margin-bottom: 3rem;
+                }
+                a{
+                    width: 100%;
+                    max-width: 25rem;
+                    display: block;
+                    color: #8B8B8B;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    transition: .3s;
+                    &:not(:last-child){
+                        margin-bottom: 1.5rem;
+                    }
+                    &:hover{
+                        color: #616161;
+                    }
+                }
+                .redes-sociais{
+                    display: flex;
+                    align-items: center;
+                    a{
+                        width: 100%;
+                        max-width: 4rem;
+                        height: 4rem;
+                        &:not(:last-child){
+                            margin-right: 3rem;
+                        }
+                        .icon-face{
+                            transition: all .3s;
+                            &:hover{
+                                background-color: #5377bb;
+                            }
+                        }
+                        .icon-yt{
+                            transition: all .3s;
+                            &:hover{
+                                background-color: #e64e4e;
+                            }
+                        }
+                        .icon-insta{
+                            transition: all .3s;
+                            &:hover{
+                                background-color: #eb337f;
+                            }
+                        }
+                        .icon-tt{
+                            margin-top: -.7rem;
+                            transition: all .3s;
+                            &:hover{
+                                background-color: #95b7f5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h6{
+            margin-top: 8rem;
+            text-align: center;
+            color: #8B8B8B;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+    @media(max-width: 800px){
+        .container{
+            .content-footer{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    @media(max-width: 460px){
+        .container{
+            .content-footer{
+                .menu-container{
+                    .title-redes{
+                        font-size: 2rem;
+                    }
+                    h5{
+                        font-size: 2.5rem;
+                    }
+                    a{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
