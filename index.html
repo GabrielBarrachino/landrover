@@ -5,29 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image" href="./img/logo-icon.png">
     <title>Land Rover - Redesign</title>
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Land Rover - Redesign">
+    <meta property="og:url" content="https://landrover.vercel.app">
+    <meta property="og:description" content="Página Redesign da Land Rover feita para estudos">
+    <meta property="og:image" content="https://landrover.vercel.app/tag-banner-logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt-br">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://landrover.vercel.app">
+    <meta property="twitter:title" content="Land Rover - Redesign">
+    <meta property="twitter:description" content="Página Redesign da Land Rover feita para estudos">
+    <meta property="twitter:image" content="https://landrover.vercel.app/tag-banner-logo.png">
+
+    <!-- Whatsapp -->
+    <meta property="whatsapp:card" content="summary_large_image">
+    <meta property="whatsapp:url" content="https://landrover.vercel.app">
+    <meta property="whatsapp:title" content="Land Rover - Redesign">
+    <meta property="whatsapp:description" content="Página Redesign da Land Rover feita para estudos">
+    <meta property="whatsapp:image" content="https://landrover.vercel.app/icon-topo.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="js-header">
         <div class="container">
             <div class="logo">
                 <a href="#">
                     <img src="./img/icons/logo.svg" alt="Logo Land Rover" title="Logo Land Rover">
                 </a>
             </div>
-    
             <nav>
                 <ul>
-                    <li><a href="#s-family" title="Véiculos Land Rover">Veículos</a></li>
-                    <li><a href="#s-shop" title="Comprar Land Rover">Compras</a></li>
-                    <li><a href="#concessionaria" title="Nossas Concessionárias">Concessionárias</a></li>
+                    <li><a href="#s-family" title="Véiculos Land Rover" class="js-nav">Veículos</a></li>
+                    <li><a href="#s-shop" title="Comprar Land Rover" class="js-nav">Compras</a></li>
+                    <li><a href="#concessionaria" title="Nossas Concessionárias" class="js-nav">Concessionárias</a></li>
                     <li><a href="#" class="btn-menu" title="Véiculos Land Rover">Explorar</a></li>
                 </ul>
-                <button class="btn-mobile"><img src="./img/icons/menu.png" alt=""></button>
+                <button class="btn-mobile" id="js-btn-mobile"><img src="./img/icons/menu.png" alt=""></button>
             </nav>
         </div>
     </header>
+
+    <div class="menu-mobile">
+        <div class="overlay" id="js-overlay"></div>
+        <aside>
+            <img src="./img/icons/logo.svg" alt="">
+            <ul>
+                <li><a href="#s-family" class="js-menu-links">Veículos</a></li>
+                <li><a href="#s-shop" class="js-menu-links">Compras</a></li>
+                <li><a href="#concessionaria" class="js-menu-links">Concessionárias</a></li>
+                <li><a href="#" class="btn-menu">Explorar</a></li>
+            </ul>
+        </aside>
+    </div>
 
     <section class="s-hero">
                 <div class="bg-container">
@@ -35,7 +75,7 @@
                         <div class="text-content">
                             <h1>Discovery</h1>
                             <p>Sofisticação em sete assentos</p>
-                            <a href="#" class="btn-home" title="Monte seu Land Rover" target="_blank">Monte o seu</a>
+                            <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l462_k235/4akg6?_gl=1*oj59rt*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.255515592.1591591382.1688847251-958608892.1679625248&_gac=1.14754756.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" class="btn-home" title="Monte seu Land Rover" target="_blank">Monte o seu</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +90,7 @@
                 <div class="right-content">
                     <h4>Monte o seu</h4>
                     <p>Use o configurador para criar o seu Land Rover perfeito.</p>
-                    <a href="#" class="btn-info" title="Monte seu Land Rover" target="_blank">Monte o seu</a>
+                    <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l460_k23/4akg6?_gl=1*1vsrxwy*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.209255634.1591591382.1688847251-958608892.1679625248&_gac=1.257573625.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" class="btn-info" title="Monte seu Land Rover" target="_blank">Monte o seu</a>
                 </div>
             </div>
             <div class="card-container card-top">
@@ -60,7 +100,7 @@
                 <div class="right-content">
                     <h4>Informações</h4>
                     <p>Inscreva-se para continuar informado.</p>
-                    <a href="#" class="btn-info" title="Monte seu Land Rover" target="_blank">Inscrever</a>
+                    <a href="https://cxp-forms.landrover.com/br-compact/pt/form/01224000000TXPa?formCode=lr-kmi-br-pt&campaign=7011o000000OWUd" class="btn-info" title="Obtenha mais Informações" target="_blank">Inscrever</a>
                 </div>
             </div>
             <div class="card-container card-money">
@@ -70,7 +110,7 @@
                 <div class="right-content">
                     <h4>Orçamentos</h4>
                     <p>Orçamento personalizado para seu modelo favorito.</p>
-                    <a href="#" class="btn-info" title="Monte seu Land Rover" target="_blank">Pedir Orçamento</a>
+                    <a href="https://cxp-forms.landrover.com/br-compact/pt/form/generic/?nameplate=L663&formCode=lr-raq-br-pt&campaign=0&_gl=1*1fsdud9*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.50927209.1591591382.1688847251-958608892.1679625248&_gac=1.222496617.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" class="btn-info" title="Faça seu orçamento" target="_blank">Pedir Orçamento</a>
                 </div>
             </div>
             <div class="card-container">
@@ -80,7 +120,7 @@
                 <div class="right-content">
                     <h4>Concessionárias</h4>
                     <p>Visite nossas lojas ou centros de serviços autorizados.</p>
-                    <a href="#" class="btn-info" title="Monte seu Land Rover" target="_blank">Encontrar</a>
+                    <a href="https://www.landrover.com.br/national-dealer-locator.html" class="btn-info" title="Encontre uma concessionária" target="_blank">Encontrar</a>
                 </div>
             </div>
         </div>
@@ -98,7 +138,7 @@
                         <div class="text-content">
                             <h3>Família Range Rover</h3>
                             <p>Sofisticação e requinte</p>
-                            <a href="#" class="btn-family">Conhecer Família</a>
+                            <a href="https://www.landrover.com.br/range-rover/index.html" class="btn-family">Conhecer Família</a>
                         </div>
                     </div>
                     <div class="text-content-responsive">
@@ -107,7 +147,7 @@
                             <p>Sofisticação e requinte</p>
                         </div>
                         <div class="box-btn">
-                            <a href="#" class="btn-family">Conhecer Família</a>
+                            <a href="https://www.landrover.com.br/range-rover/index.html" target="_blank" class="btn-family">Conhecer Família</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +156,7 @@
                         <div class="text-content">
                             <h3>Família Discovery</h3>
                             <p>Versátil e confiante</p>
-                            <a href="#" class="btn-family">Conhecer Família</a>
+                            <a href="https://www.landrover.com.br/discovery/index.html" class="btn-family">Conhecer Família</a>
                         </div>
                     </div>
                     <div class="text-content-responsive">
@@ -125,7 +165,7 @@
                             <p>Versátil e confiante</p>
                         </div>
                         <div class="box-btn">
-                            <a href="#" class="btn-family">Conhecer Família</a>
+                            <a href="https://www.landrover.com.br/discovery/index.html" target="_blank" class="btn-family">Conhecer Família</a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +174,7 @@
                         <div class="text-content">
                             <h3>Família Defender</h3>
                             <p>Liberdade para todos</p>
-                            <a href="#" class="btn-family">Conhecer Família</a>
+                            <a href="https://www.landrover.com.br/defender/index.html" class="btn-family">Conhecer Família</a>
                         </div>
                     </div>
                     <div class="text-content-responsive">
@@ -143,7 +183,7 @@
                             <p>Liberdade para todos</p>
                         </div>
                         <div class="box-btn">
-                            <a href="#" class="btn-family">Conhecer Família</a>
+                            <a href="https://www.landrover.com.br/defender/index.html" target="_blank" class="btn-family">Conhecer Família</a>
                         </div>
                     </div>
                 </div>
@@ -174,8 +214,8 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Monte o seu</a>
-                        <a href="#" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
+                        <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l460_k23/4akg6?_gl=1*1vsrxwy*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.209255634.1591591382.1688847251-958608892.1679625248&_gac=1.257573625.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn montar-btn">Monte o seu</a>
+                        <a href="https://cxp-forms.landrover.com/br-compact/pt/form/generic/?nameplate=L663&formCode=lr-raq-br-pt&campaign=0&_gl=1*1fsdud9*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.50927209.1591591382.1688847251-958608892.1679625248&_gac=1.222496617.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
                     </div>
                 </div>
             </div>
@@ -195,8 +235,8 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Monte o seu</a>
-                        <a href="#" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
+                        <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l461_k23/4akg6?_gl=1*1bw7bm*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.150009078.1591591382.1688847251-958608892.1679625248&_gac=1.58460760.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn montar-btn">Monte o seu</a>
+                        <a href="https://cxp-forms.landrover.com/br-compact/pt/form/generic/?nameplate=L663&formCode=lr-raq-br-pt&campaign=0&_gl=1*1fsdud9*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.50927209.1591591382.1688847251-958608892.1679625248&_gac=1.222496617.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
                     </div>
                 </div>
             </div>
@@ -216,8 +256,8 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Monte o seu</a>
-                        <a href="#" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
+                        <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l560_k23/4akg6?_gl=1*1bw7bm*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.150009078.1591591382.1688847251-958608892.1679625248&_gac=1.58460760.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn montar-btn">Monte o seu</a>
+                        <a href="https://cxp-forms.landrover.com/br-compact/pt/form/generic/?nameplate=L663&formCode=lr-raq-br-pt&campaign=0&_gl=1*1fsdud9*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.50927209.1591591382.1688847251-958608892.1679625248&_gac=1.222496617.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
                     </div>
                 </div>
             </div>
@@ -237,8 +277,8 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Monte o seu</a>
-                        <a href="#" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
+                        <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l551_k235/4akg6?_gl=1*1owd4z2*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.40648546.1591591382.1688847251-958608892.1679625248&_gac=1.217181028.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn montar-btn">Monte o seu</a>
+                        <a href="https://cxp-forms.landrover.com/br-compact/pt/form/generic/?nameplate=L663&formCode=lr-raq-br-pt&campaign=0&_gl=1*1fsdud9*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.50927209.1591591382.1688847251-958608892.1679625248&_gac=1.222496617.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
                     </div>
                 </div>
             </div>
@@ -258,8 +298,8 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Monte o seu</a>
-                        <a href="#" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
+                        <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l462_k235/4akg6?_gl=1*1owd4z2*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.40648546.1591591382.1688847251-958608892.1679625248&_gac=1.217181028.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn montar-btn">Monte o seu</a>
+                        <a href="https://cxp-forms.landrover.com/br-compact/pt/form/generic/?nameplate=L663&formCode=lr-raq-br-pt&campaign=0&_gl=1*1fsdud9*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.50927209.1591591382.1688847251-958608892.1679625248&_gac=1.222496617.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
                     </div>
                 </div>
             </div>
@@ -279,8 +319,8 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Monte o seu</a>
-                        <a href="#" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
+                        <a href="https://buildyour.landrover.com.br/lr2/r/products/_/pt_br/l663_k235/4akg6?_gl=1*1owd4z2*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.40648546.1591591382.1688847251-958608892.1679625248&_gac=1.217181028.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn montar-btn">Monte o seu</a>
+                        <a href="https://cxp-forms.landrover.com/br-compact/pt/form/generic/?nameplate=L663&formCode=lr-raq-br-pt&campaign=0&_gl=1*1fsdud9*_gcl_aw*R0NMLjE2ODg0MTg1NDEuQ2p3S0NBanc0NG1sQmhBUUVpd0FxUDNlVmg3WDNEZ29vX2JockJiMDNZQTlRLXozZnV3Z20wYnpMWU9SMDBlWEhwUmhrX1NnZzZoXzBSb0NwRkVRQXZEX0J3RQ..*_gcl_au*MjAxMDA1MDg3NS4xNjg2MDk2MDAw&_ga=2.50927209.1591591382.1688847251-958608892.1679625248&_gac=1.222496617.1688418542.CjwKCAjw44mlBhAQEiwAqP3eVh7X3Dgoo_bhrBb03YA9Q-z3fuwgm0bzLYOR00eXHpRhk_Sgg6h_0RoCpFEQAvD_BwE" target="_blank" class="card-btn cotacao-btn">Solicitar cotação</a>
                     </div>
                 </div>
             </div>
@@ -297,7 +337,7 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Explorar <span>um Land Rover elétrico</span></a>
+                        <a href="https://www.landrover.com.br/range-rover/range-rover/index.html" target="_blank" class="card-btn montar-btn">Explorar <span>um Land Rover elétrico</span></a>
                     </div>
                 </div>
             </div>
@@ -314,7 +354,7 @@
                         </div>
                     </div>
                     <div class="card-btns">
-                        <a href="#" target="_blank" class="card-btn montar-btn">Explorar <span>mais sobre os veículos</span></a>
+                        <a href="https://www.landrover.com.br/land-rover-experience/news/range-rover-history.html" target="_blank" class="card-btn montar-btn">Explorar <span>mais sobre os veículos</span></a>
                     </div>
                 </div>
             </div>
@@ -328,7 +368,7 @@
                 <div class="content-left">
                     <h3>CHEGOU O DEFENDER EDIÇÃO ESPECIAL ONÇAFARI 10 ANOS</h3>
                     <p>Para coroar 10 anos de Onçafari, trazemos ao público uma edição especial com um instinto de preservação, pronta para defender o habitat de alguns dos animais originários da fauna brasileira.</p>
-                    <a href="#" class="btn-explorar" target="_blank">Saiba Mais</a>
+                    <a href="https://www.landrover.com.br/land-rover-experience/news/oncafari.html" class="btn-explorar" target="_blank">Saiba Mais</a>
                 </div>
                 <div class="content-right">
                     <img src="./img/oncafari.jpg" alt="">
@@ -342,7 +382,7 @@
                 <div class="content-left">
                     <h3>CLÍNICA DE RESTAURAÇÃO LAND ROVER</h3>
                     <p>Conheça agora a Clínica de Restauração Land Rover , que nasceu com o objetivo de restaurar e preservar os veículos mais clássicos da marca tudo para que as gerações atuais e futuras também possam viver toda a autenticidade dos primeiros veículos mais capazes da história automotiva.</p>
-                    <a href="#" class="btn-explorar" target="_blank">Saiba Mais</a>
+                    <a href="https://www.landrover.com.br/ownership/clinica-de-restauracao-land-rover/index.html" class="btn-explorar" target="_blank">Saiba Mais</a>
                 </div>      
             </div>
         </div>
@@ -355,7 +395,7 @@
                     <div class="content-conc">
                         <h2>Nossas Concessionárias</h2>
                         <p>Com foco total no relacionamento com o cliente, nossos departamentos de vendas e pós-vendas estão sempre prontos para oferecer uma experiência verdadeiramente Premium.</p>
-                        <a href="#" class="btn-concessionaria">Encontre um concessionário</a>
+                        <a href="https://www.landrover.com.br/national-dealer-locator.html" target="_blank" class="btn-concessionaria">Encontre um concessionário</a>
                     </div>
                 </div>
             </div>
@@ -367,7 +407,7 @@
             <div class="content-footer">
                 <div class="menu-container">
                     <h5>Download</h5>
-                    <a href="#" target="_blank">Download do catálogo</a>
+                    <a href="https://www.landrover.com.br/download-a-brochure/index.html" target="_blank">Download do catálogo</a>
                     <a href="#" target="_blank">Land Rover Collection</a>
                 </div>
                 <div class="menu-container">
@@ -395,13 +435,13 @@
                 <div class="menu-container">
                     <h5 class="title-redes">Siga Land Rover <br>nas redes sociais:</h5>
                     <div class="redes-sociais">
-                        <a href="#" target="_blank">
+                        <a href="https://www.facebook.com/landrover" target="_blank">
                             <img src="./img/icons/facebook.svg" alt="" class="icon-face">
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://www.youtube.com/landroverbr" target="_blank">
                             <img src="./img/icons/youtube.svg" alt="" class="icon-yt">
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://www.instagram.com/landroverbr/" target="_blank">
                             <img src="./img/icons/instagram.svg" alt="" class="icon-insta">
                         </a>
                         <a href="#" target="_blank">
@@ -415,6 +455,6 @@
         </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./js/scripts/main.js"></script>
 </body>
 </html>
